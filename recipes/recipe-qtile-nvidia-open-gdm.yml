@@ -1,4 +1,4 @@
-name: hyprland-nvidia-gdm
+name: qtile-nvidia-open-gdm
 
 description: ublue images for wayland compositors
 
@@ -8,7 +8,7 @@ image-version: 41
 
 modules:
   - from-file: common/common-modules.yml
-  - from-file: common/nvidia-modules.yml
+  - from-file: common/nvidia-open-modules.yml
   - from-file: common/gdm-modules.yml
-  - from-file: common/hyprland-modules.yml
+  - from-file: common/qtile-modules.yml
   - from-file: common/final-modules.yml

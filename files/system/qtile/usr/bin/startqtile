@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Tell this script to exit if there are any errors.
+# You should have this in every custom script, to ensure that your completed
+# builds actually ran successfully without any errors!
+set -oue pipefail
+
+
+qtile_conf="$HOME/.config/qtile/config.py"
+
+if [ -f "$qtile_conf" ]; then
+    qtile start -b wayland
+else
+    XDG_CONFIG_HOME=/usr/etc/ qtile start -b wayland
+fi

@@ -10,6 +10,7 @@
 
 
 [![wayblue](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml/badge.svg)](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml)
+[![trivy](https://github.com/wayblueorg/wayblue/actions/workflows/trivy.yml/badge.svg)](https://github.com/wayblueorg/wayblue/actions/workflows/trivy.yml)
 [![Discord](https://img.shields.io/discord/1202304549294190602?style=flat&logo=discord&logoColor=white&label=Discord&labelColor=%235F6AE9&color=%2333CB56)
 ](https://discord.gg/86fM55XfEq)
 
@@ -19,6 +20,7 @@ This repo takes the [BlueBuild](https://blue-build.org/) template and builds out
 - hyprland (with waybar)
 - sway (with waybar)
 - river (with waybar)
+- qtile (experimental)
 
 ## What
 
@@ -65,7 +67,9 @@ If you want to add your own customizations on top of wayblue, you are advised st
 | `river`                  | River    | No                       |
 | `river-nvidia`          | River    | Yes, closed drivers      |
 | `river-nvidia-open`     | River    | Yes, open drivers        |
-
+| `qtile`                 | Qtile    | No                       |
+| `qtile-nvidia`          | Qtile    | Yes, closed drivers      |
+| `qtile-nvidia-open`     | Qtile    | Yes, open drivers        |
 
 #### GDM images (not recommended) <sup>[why?](https://github.com/wayblueorg/wayblue/blob/live/FAQ.md#why-do-the-gdm-images-have-gnome-shell-in-them)</sup>
 | Name                           | WM       | Nvidia Support           |
@@ -82,6 +86,9 @@ If you want to add your own customizations on top of wayblue, you are advised st
 | `river-gdm`                   | River    | No                       |
 | `river-nvidia-gdm`            | River    | Yes, closed drivers      |
 | `river-nvidia-open-gdm`       | River    | Yes, open drivers        |
+| `qtile-gdm`                   | Qtile    | No                       |
+| `qtile-nvidia-gdm`            | Qtile    | Yes, closed drivers      |
+| `qtile-nvidia-open-gdm`       | Qtile    | Yes, open drivers        |
 
 ### Rebasing
 
