@@ -29,7 +29,8 @@ modules:
     - type: script
       scripts:
         - installandroidudev.sh
-        - installrpmfusion.sh
+        - ensureautoupdates.sh
+        - fixupstreamicdloaderbug.sh
 
     - type: rpm-ostree
       install:
@@ -37,7 +38,8 @@ modules:
         - rofi-wayland
 
       # environment
-        - power-profiles-daemon
+        - fzf
+        - tuned-ppd
         - xorg-x11-server-Xwayland
         - headsetcontrol
         - mediainfo
@@ -111,7 +113,6 @@ modules:
         - dunst
 
       # theme and GUI
-        - adwaita-qt5
         - fontawesome-fonts-all
         - gnome-themes-extra
         - gnome-icon-theme
@@ -150,6 +151,7 @@ modules:
 
     - type: script
       scripts:
+        - installrpmfusion.sh
         - removeunusedrepos.sh
 
     - type: files
@@ -169,3 +171,4 @@ modules:
         - addbrewjustimport.sh
 
     - type: wayblue-signing
+      source: local
